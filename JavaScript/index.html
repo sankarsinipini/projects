@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Inline JS -->
+    <h1 onmouseover="this.innerHTML='If You Can'" onmouseout="this.innerHTML='Catch Me'">Catch Me</h1>
+    <button onclick="hello()">Click Me</button>
+
+    <button onclick="changeToGreen()">Green</button>
+    <button onclick="changeToRed()">Red</button>
+<br><br>
+    <input type="text" placeholder="First Number" id="fn"><br>
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br>
+    <input type="text" placeholder="Second Number" id="sn"><br>
+    <button onclick="calculate()">Calculate</button><br>
+    <label for="">Result=<span id="rs"></span></label>
+    <!-- Internal JS -->
+    <script>
+        console.log("Hello...");
+        for(var i = 0; i<=10;i++){
+
+        }
+        // console.log(i);
+
+        // for(let j=0; j<=10;j++){
+            // Scope of j
+        // }
+        // console.log(j);
+        let a = 10;
+        let b = 20;
+        let c = 15;
+        // console.log(a+b);
+        if(a>b && a>c){
+            console.log(a+" is largest")
+        } else if(b>c){
+            console.log(b+" is largest")
+        } else {
+            console.log(c+" is largest")
+        }
+
+        // Dialog Box
+        // alert("Alert Box");
+        // confirm("Confirm Box");
+        // prompt("Prompt Box");
+        // let num1 = parseInt(prompt("Enter first number"));
+        // let num2 = parseInt(prompt("Enter second number"));
+        // document.body.innerHTML = "Sum = "+(num1+num2);
+
+        function hello(){
+            alert("Hello World");
+        }
+        // hello();
+
+        function changeToGreen(){
+            let res = confirm("Do you want to chaneg the color to green?")
+            if(res){
+                document.body.style.backgroundColor = "green"
+            }
+        }
+        function changeToRed(){
+            let res = confirm("Do you want to chaneg the color to red?")
+            if(res){
+                document.body.style.backgroundColor = "red"
+            }
+        }
+        function calculate(){
+            let x = document.getElementById("fn").value;
+            console.log(x);
+            // let y = document.getElementsByTagName("input");
+            // console.log(y[1]);
+            let y = document.getElementById('sn').value;
+            let op = document.getElementById("op").value;
+            x = parseInt(x);
+            y = parseInt(y);
+            let res;
+            switch(op){
+                case '+':
+                    res = x+y;
+                    break;
+                case '-':
+                    res = x-y;
+                    break;
+                case '*':
+                    res = x*y;
+                    break;
+                case '/':
+                    res = x/y;
+                    break;
+            }
+            document.getElementById('rs').innerHTML = res;
+        }
+    </script>
+</body>
+</html>
