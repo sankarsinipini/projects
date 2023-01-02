@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} || About{% endblock title %}
+
+{% block body %}
+    <h1>About Me</h1>
+    <h3>My Name is {{myname}}</h3>
+    <p>Number is {{num}}</p>
+    {% if True %}
+    <p>This is an even number</p>
+    {% else %}
+    <p>This is an odd number</p>
+    {% endif %}
+    <ul>
+    {% for d in drinks %}
+        <li>{{d}}</li>
+    {% endfor %}
+    </ul>
+    <table border="1">
+        <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>CGPA</th>
+        </tr>
+        {% for r,s in students.items %}
+            <tr>
+                <td>{{r}}</td>
+                {% for x in s.values %}
+                    <td>{{x}}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <img src="{% static 'images/book.jpg' %}">
+
+{% endblock body %}

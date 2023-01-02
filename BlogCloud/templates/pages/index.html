@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} || Home{% endblock title %}
+
+{% block body %}
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/image-1.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Articles On Coding and Latest Tech</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/image-2.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>My Travel Stories</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/image-3.jpg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Thoughts about the Books I read</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-5">
+  <div class="row">
+    <div class="col-md-2">
+        <div class="card">
+            <img src="{% static 'images/book.jpg' %}" class="card-img-top cat-img" alt="">
+            <div class="card-body">
+                <h4 class="h4">Book Review</h4>
+                <button class="btn btn-primary w-100">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <img src="{% static 'images/coading.jpg' %}" class="card-img-top cat-img" alt="">
+            <div class="card-body">
+                <h4 class="h4">Coding Blogs</h4>
+                <button class="btn btn-primary w-100">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <img src="{% static 'images/food.jpg' %}" class="card-img-top cat-img" alt="">
+            <div class="card-body">
+                <h4 class="h4">Food Blog</h4>
+                <button class="btn btn-primary w-100">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <img src="{% static 'images/gadgets.png' %}" class="card-img-top cat-img" alt="">
+            <div class="card-body">
+                <h4 class="h4">New Gadgets</h4>
+                <button class="btn btn-primary w-100">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <img src="{% static 'images/movie.jpg' %}" class="card-img-top cat-img" alt="">
+            <div class="card-body">
+                <h4 class="h4">Movie Review</h4>
+                <button class="btn btn-primary w-100">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card">
+            <img src="{% static 'images/tech.PNG' %}" class="card-img-top cat-img" alt="">
+            <div class="card-body">
+                <h4 class="h4">Tech News</h4>
+                <button class="btn btn-primary w-100">Read More</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

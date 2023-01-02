@@ -1,0 +1,147 @@
+*{
+ margin: 0px;
+ padding: 0px;  
+ font-family: Arial, Helvetica, sans-serif; 
+}
+body{
+    background-color: #ddd;
+}
+nav{
+    background-color: #035394;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 18px;
+}
+input{
+    padding: 8px;
+}
+input[type="text"]{
+    width: 300px;
+    border-radius: 3px 0px 0px 3px;
+}
+input[type="submit"]{
+    margin-left: -6px;
+    border: none;
+    padding: 9px;
+    border-radius: 0px 3px 3px 0px;
+}
+/* Banner */
+#banner{
+    position: relative;
+    background-color: #fff;
+}
+.bimg{
+    width: 100%;
+}
+.btext{
+    width: 350px;
+    position: absolute;
+    top:0;
+    padding: 125px;
+}
+.btext h1{
+    font-size: 50px;
+    color: #035394;
+    margin-bottom: 10px;
+}
+.btext p{
+    line-height: 1.6;
+    font-size: 18px;
+}
+.shop-now{
+    background-color: #035394;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* Products */
+.product-container{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    width: 175px;
+    margin: 5px;
+    padding: 8px;
+}
+.pimg{
+    height: 175px;
+    width: 150px;
+    display: block;
+}
+.pname{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: 3px;
+}
+.offer{
+    background-color: #022b4d;
+    color: white;
+    font-size: 11px;
+    padding: 4px;
+    border-radius: 2px;
+}
+.winter, .electronics{
+    text-align: center;
+    background-image: url("../images/snow.png");
+    background-size: cover;
+}
+.winter h2, .electronics h2{
+    margin-top: 60px;
+    line-height: 1.5;
+}
+.winter a, .electronics a{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 3px;
+}
+.electronics{
+    background-image: url("../images/electronics.jpg");
+}
+
+/* Contact Us */
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    color: #fff;
+    background-color: #013864;
+}
+.address{
+    line-height: 1.8;
+}
+/* Footer */
+footer{
+    background-color: #010f1b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 5px solid white;
+}

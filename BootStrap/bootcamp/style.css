@@ -1,0 +1,10 @@
+.timg{
+    height: 125px;
+    width: 125px;
+}
+.trainner{
+    transition: transform 0.5s;
+}
+.trainner:hover{
+    transform: scale(1.1);
+}
